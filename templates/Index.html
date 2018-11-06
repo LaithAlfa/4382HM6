@@ -1,0 +1,214 @@
+<!-- templates/Index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>  
+    <link href="{% static 'bootstrap-4.1.3-dist\css\bootstrap.min.css' %}" rel="stylesheet">
+    <script src="main.js"></script>
+    <link href="{% static 'css/creative.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body >
+      <nav class="navbar navbar-expand-sm static-top navbar-light" style="background-color: #e3f2fd;">
+        <!-- Brand/logo -->
+        <div class="container">
+        <a class="navbar-brand" href="index.html" > 
+            <img src="{% static 'pictures/internet.png' %}" alt="logo" style="width:25px; height:25px; left: 89px;">       
+         IoT Initiative </a>  
+        <!-- Links -->
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="Events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Events.html">Tutorials</a>
+            </li>
+            -->
+          </ul>
+          <a class="btn btn-primary" href="form.html">Subscription <i class="fas fa-check"></i>
+
+          </a>
+        </div>
+    </nav>
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="{% static 'video/CircuitBoardTrackAcrossVidevo.mov' %}">
+    </video>
+    <div class="container">
+      <div class="col-xl-9 mx-auto">
+        <h1 class="mb-5">Transforming IoT developments through innovation, collaboration, and academic research. </h1>
+      </div>
+
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" placeholder="Subscribe to our weekly publication...">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-block btn-lg btn-primary">Go</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ <!-- Icons Grid -->
+ <section class="features-icons bg-light text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <img src="{% static 'pictures\iot5.png' %}" style="width:125px; height:125px; margin-top: -10%; margin-left: 30%">
+          </div>
+          <h3>Communication Layer</h3>
+          <p class="lead mb-0">This will be the RF or Cellular network which enables data transfer between device and cloud.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <img src="{% static 'pictures/iot6.png' %}"style="width:125px; height:125px; margin-top: -10%; margin-left: 30%">
+          </div>
+          <h3>Application</h3>
+          <p class="lead mb-0">Application component comprise of the custom applications that is actually making use of the things data</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <img src="{% static 'pictures/iot7.png' %}" style="width:125px; height:125px; margin-top: -10%; margin-left: 30%">
+          </div>
+          <h3>Global infrastructure</h3>
+          <p class="lead mb-0"> Application on the cloud used to validate and process the received data from the physical devices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- Image Showcases -->
+ <section class="showcase">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('static/pictures/iot1.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2></h2>
+        <p class="lead mb-0">The IoT servers have different purposes, like administration, monitoring, data gathering and analysis. They are completely modular, based on open-source enterprise platforms that provide the capabilities that are needed for the server-side of the IoT architecture, to connect to devices. </p>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 text-white showcase-img" style="background-image: url('static/pictures/iot2.jpg');"></div>
+      <div class="col-lg-6 my-auto showcase-text">
+        <h2>Military Apllications</h2>
+        <p class="lead mb-0">Several nations are studying the potential military benefits of Internet of Things technologies, including a variety of inexpensive commercial sensors and smart city capabilities. </p>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('static/pictures/iot4.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2>Server &amp; Customiztions</h2>
+        <p class="lead mb-0">The IoT servers have different purposes, like administration, monitoring, data gathering and analysis. They are completely modular, based on open-source enterprise platforms that provide the capabilities that are needed for the server-side of the IoT architecture, to connect to devices. </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Testimonials -->
+ <section class="testimonials text-center bg-light">
+  <div class="container">
+    <h2 class="mb-5"><a href="About.html">Meet The Team....</h2></a>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="static/pictures/Iot8.jpeg" style="width:325px; height:150px;"alt="">
+          <h5>Aaron Hebert - CIO and Founder</h5>
+          <p class="font-weight-light mb-0">Advisor to several startups as well as an active board member, Mr. Hebert leads the applications of technology in Supply Chain Management, IT Infrastructure, as well as Cloud Services. His leadership experience is highly sought, unrivaled by other compnaies.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="static/pictures/Iot9.jpg" style="width:325px; height:150px;" alt="">
+          <h5>Laith Alfaloujeh - CEO and Founder</h5>
+          <p class="font-weight-light mb-0"> American entrepreneur and business magnate, Alfaloujeh's ability to focus is accompanied by related instincts to simplify items, by zeroing in on their essence and eliminating unnecessary components.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="static/pictures/Iot10.jpg" style="width:325px; height:150px;" alt="">
+          <h5>Beau Robbins - COO and Founder</h5>
+          <p class="font-weight-light mb-0">High integrity and honesty hallmark Mr. Robbins, and his hardworking and willingness to learn are a great asset to the CIO and CEO. Robbins break tasks down into actionable steps, and ensure that they're done efficiently. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Footer -->
+ <footer class="footer bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item">
+            <a href="About.html">About</a>
+          </li>
+          <!--
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="Events.html">Events</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="Totural.html">Toturals</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="#">Privacy Policy</a>
+          </li>
+          -->
+        </ul>
+        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+      </div>
+      <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mr-3">
+            <a href="#">
+              <i class="fab fa-facebook fa-2x fa-fw"></i>
+            </a>
+          </li>
+          <li class="list-inline-item mr-3">
+            <a href="#">
+              <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fab fa-instagram fa-2x fa-fw"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
